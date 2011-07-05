@@ -5,9 +5,8 @@ class DigitalsController < Spree::BaseController
   def show
     link = DigitalLink.find_by_secret(params[:secret])
     if link.present? and link.digital.attachment.present?
-      attachment = link.digital.attachment
       if link.authorize!
-        redirect_to attachment.authenticated_url
+        redirect_to link.digital.authenticated_url
       end
     end
     render :unauthorized
