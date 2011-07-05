@@ -7,6 +7,7 @@ class DigitalsController < Spree::BaseController
     if link.present? and link.digital.attachment.present?
       if link.authorize!
         redirect_to link.digital.authenticated_url
+        return
       end
     end
     render :unauthorized
