@@ -9,3 +9,7 @@ nbproject
 *.swp
 spec/test_app
 *.tmproj
+.bundle
+.rbenv-version
+vendor
+bin
