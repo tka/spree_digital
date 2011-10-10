@@ -1,4 +1,10 @@
 PATH
+  remote: .
+  specs:
+    spree_digital (0.60.99)
+      spree_core
+
+PATH
   remote: ../spree/core
   specs:
     spree_core (0.70.0.rc2)
@@ -61,16 +67,13 @@ GEM
     braintree (2.12.0)
       builder (>= 2.0.0)
     builder (3.0.0)
-    capybara (0.4.1.2)
-      celerity (>= 0.7.9)
-      culerity (>= 0.2.4)
+    capybara (1.0.1)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
-      selenium-webdriver (>= 0.0.27)
-      xpath (~> 0.1.3)
-    celerity (0.9.0)
+      selenium-webdriver (~> 2.0)
+      xpath (~> 0.1.4)
     childprocess (0.2.2)
       ffi (~> 1.0.6)
     cocaine (0.2.0)
@@ -85,16 +88,16 @@ GEM
       cucumber (>= 0.10.1)
       nokogiri (>= 1.4.4)
       rack-test (>= 0.5.7)
-    culerity (0.2.15)
-    database_cleaner (0.6.7.RC)
+    database_cleaner (0.6.7)
     deface (0.7.0)
       nokogiri (~> 1.5.0)
       rails (>= 3.0.9)
     diff-lcs (1.1.3)
     erubis (2.7.0)
-    factory_girl (1.3.3)
-    factory_girl_rails (1.0.1)
-      factory_girl (~> 1.3)
+    factory_girl (2.1.2)
+      activesupport
+    factory_girl_rails (1.2.0)
+      factory_girl (~> 2.1.0)
       railties (>= 3.0.0)
     faker (1.0.0)
       i18n (~> 0.4)
@@ -169,19 +172,19 @@ GEM
       activesupport (~> 3.0)
     rd_resource_controller (1.0.1)
     rdoc (3.9.4)
-    rspec (2.5.0)
-      rspec-core (~> 2.5.0)
-      rspec-expectations (~> 2.5.0)
-      rspec-mocks (~> 2.5.0)
-    rspec-core (2.5.2)
-    rspec-expectations (2.5.0)
+    rspec (2.6.0)
+      rspec-core (~> 2.6.0)
+      rspec-expectations (~> 2.6.0)
+      rspec-mocks (~> 2.6.0)
+    rspec-core (2.6.4)
+    rspec-expectations (2.6.0)
       diff-lcs (~> 1.1.2)
-    rspec-mocks (2.5.0)
-    rspec-rails (2.5.0)
+    rspec-mocks (2.6.0)
+    rspec-rails (2.6.1)
       actionpack (~> 3.0)
       activesupport (~> 3.0)
       railties (~> 3.0)
-      rspec (~> 2.5.0)
+      rspec (~> 2.6.0)
     ruby-debug-base19 (0.11.25)
       columnize (>= 0.3.1)
       linecache19 (>= 0.5.11)
@@ -204,8 +207,6 @@ GEM
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.4)
-    sqlite3-ruby (1.3.3)
-      sqlite3 (>= 1.3.3)
     state_machine (1.0.1)
     stringex (1.0.3)
     term-ansicolor (1.0.6)
@@ -222,17 +223,18 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capybara (= 0.4.1.2)
+  capybara (= 1.0.1)
   cucumber-rails
-  database_cleaner (= 0.6.7.RC)
-  factory_girl (= 1.3.3)
-  factory_girl_rails (= 1.0.1)
+  database_cleaner (= 0.6.7)
+  factory_girl (= 2.1.2)
+  factory_girl_rails (= 1.2.0)
   faker
   launchy
   nokogiri
   rcov
-  rspec-rails (= 2.5.0)
+  rspec-rails (= 2.6.1)
   ruby-debug19
   shoulda
   spree_core!
-  sqlite3-ruby
+  spree_digital!
+  sqlite3

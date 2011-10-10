@@ -7,7 +7,7 @@
 tmp
 nbproject
 *.swp
-spec/test_app
+spec/dummy
 *.tmproj
 .bundle
 .rbenv-version
