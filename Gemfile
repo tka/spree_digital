@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
 gem 'spree_core', :path => '../spree/core'
-#gem 'spree_digital', :path => 'spree_digital'
 gem "sqlite3"
+gem "aws-s3"
 
 group :test do
   gem 'rspec-rails', '= 2.6.1'
