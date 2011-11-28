@@ -24,13 +24,13 @@ I assume that you already have a Rails 3 Spree application up and running. If no
 To make use of @digital_spree@, you need to add this line to your @Gemfile@:
 
 <pre>
-  gem 'spree_digital', :git => 'git://github.com/funkensturm/spree_digital.git', :branch => 'master'
+  gem 'spree_digital', :git => 'git://github.com/tka/spree_digital.git', :branch => 'master'
 </pre>
 
 The following terminal commands will copy the file "spree_digital/db/migration/20110410134726_create_digitals.rb":http://github.com/funkensturm/spree_digital/blob/master/db/migrate/20110410134726_create_digitals.rb to the corresponding directory in your Rails application and apply the migration to your database.
 
 <pre>
-  rake spree_digital:install
+  rake spree_digital:install:migrations
   rake db:migrate
 </pre>
 
@@ -49,7 +49,7 @@ h1. Developer Section
 
 h3. Table Diagram
 
-<img src="http://github.com/funkensturm/spree_digital/raw/master/doc/tables.png">
+<img src="http://github.com/tka/spree_digital/raw/master/doc/tables.png">
 
 h3. Installation (for Developers)
 
@@ -57,7 +57,7 @@ Get the spree framework and spree_digital extension for it:
 
 <pre>
   git clone git://github.com/spree/spree.git
-  git clone git://github.com/funkensturm/spree_digital
+  git clone git://github.com/tka/spree_digital
 </pre>
 
 Go into the spree directory and run the bundle command:
