@@ -2,11 +2,17 @@ Spree::LineItem.class_eval do
 
   has_many :digital_links
 
-  after_save :create_digital_links, :if => :digital?
+  after_create :create_digital_links, :if => :digital?
 
   # Is this item digital?
   def digital?
     variant.digital?
+  end
+
+  def reset_digital_links!
+    if digital?
+      create_digital_links
+    end
   end
 
   private
