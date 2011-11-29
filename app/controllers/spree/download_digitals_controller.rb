@@ -1,4 +1,4 @@
-class DigitalsController < Spree::BaseController
+class Spree::DownloadDigitalsController < Spree::BaseController
 
   ssl_required :show
 
@@ -12,5 +12,5 @@ class DigitalsController < Spree::BaseController
     end
     render :unauthorized
   end
-  
+
 end

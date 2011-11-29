@@ -1,2 +1,1 @@
-require 'spree_core'
-require 'spree_digital/engine'
+require 'spree/digital_module'

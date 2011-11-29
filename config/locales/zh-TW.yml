@@ -1,0 +1,12 @@
+zh-TW:
+  digital_versions: 數位版本
+
+  current_file: 目前檔案
+  new_file: 新增檔案
+  upload: 上傳
+  delete_file: 刪除檔案
+  broken_file: 警告！檔案損壞
+  delete_file_cofirmation: 你確定要刪除檔案 %{filename}?
+
+  digital_shipping: Delivery per email to <strong>%{email}</strong>
+  
